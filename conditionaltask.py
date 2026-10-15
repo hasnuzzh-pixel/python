@@ -106,5 +106,54 @@ for i in range(1,21):
 total =0
 for i in range(1,11):
     total=total+i
-    print(total)
 
+print(total)
+
+#16
+num=int(input("enter a number: "))
+
+if num %3 == 0 and num %5 ==0:
+    print("multiple of both 3 and 5")
+else:
+    print("not a multiple of both 3 and 5")
+
+#17
+for i in range(5):
+    print("Hello")
+
+#18
+numbers =[1,2,3,4,5]
+
+for num in numbers:
+    if num > 3:
+        print(num)
+
+#19
+Username ="admin"
+password ="1234"
+
+for i in range(3):
+    u=input("enter username: ")
+    p=input("enter password: ")
+
+    if u.lower() == Username and p ==password:
+        print("login successful")
+        break
+    else:
+        print("Invalid username or password")
+        print("Attempts remaining:", 2-i)
+
+else:
+    print("Account lockled")
+
+#20
+signal = input("enter color or number: ").lower()
+
+if signal == "1" or signal =="red":
+    print("stop and wait for 60 seconds")
+elif signal =="2" or signal =="yellow":
+    print("Ready and wait for 5 seconds")
+elif signal =="3" or signal == "green":
+    print("Go and drive safely")
+else:
+    print("Invalid signal")
