@@ -5,4 +5,7 @@ def greet(name):
 def greet1(name):
     return f"Hii, {name}!"
 
+def greet3(name):
+    return f"Hola, {name}!"
+
 
