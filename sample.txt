@@ -1,0 +1,42 @@
+#read()
+filele = open("sample.txt","r")
+content = file.read()
+print(content)
+file.close()
+
+#2 readline()
+file = open("sample.txt","r")
+line1= file.readline()
+print(line1)
+file.close()
+
+#3 readlines()
+file = open("sample.txt","r")
+lines = filereadlines()
+print(lines)
+file.close()
+
+#writing to files
+#1 write
+file = open("sample.txt","w")
+file.write("Hello,World!")
+file.close()
+
+#2 writelines
+file= open("sample.txt","w")
+lines = ["Hello\n","welcome to python file handling\n"]
+file.writelines(lines)
+file.close
+
+#appending data
+file =n open("sample.txt","a")
+file.write("Appended text.\n")
+file.close()
+
+#using with statement
+
+with open("sample.txt","r") as file:
+    content = file.read()
+    print(content)
+
+    #f
