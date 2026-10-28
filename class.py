@@ -71,3 +71,23 @@ class Book:
 
 book = Book("1984", "george orwell")
 print(book)
+
+#class variables and instance variables
+class Employee:
+   company = "ABC corp"
+
+
+   def __init__(self,name,position):
+      self.name = name
+      self.position = position
+
+emp1 = Employee("John","manager")
+emp2 = Employee("Alice","developer")
+
+#accessing class variable
+print(emp1.company)
+print(emp2.company)
+
+#Accessing instance variable
+print(emp1.name)
+print(emp2.name)
