@@ -13,4 +13,7 @@ class Human:
 
 def make_it_speak(obj):
     obj.speak()
-    
+
+#duck typing in action 
+for creature in Dog(),cat(),Human():
+    make_it_speak(creature)
